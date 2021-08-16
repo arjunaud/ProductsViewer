@@ -1,0 +1,10 @@
+platform :ios, '10.0'
+
+target 'ProductViewer' do
+  project 'ProductViewer/ProductViewer.xcodeproj'
+  workspace 'TargetCaseStudy.xcworkspace'
+
+  use_frameworks!
+  pod 'Kingfisher'
+
+end

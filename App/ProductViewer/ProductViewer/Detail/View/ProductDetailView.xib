@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="ProductViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="addToCartButton" destination="Gyb-A3-wee" id="J5i-9S-T07"/>
+                <outlet property="addToListButton" destination="BoJ-5n-4Vf" id="ISM-u5-Rlm"/>
+                <outlet property="descriptionTextView" destination="JdD-5y-j91" id="D7Q-1P-wWO"/>
+                <outlet property="priceLabel" destination="9RW-Ft-pKe" id="Xtc-PF-XRt"/>
+                <outlet property="productImageView" destination="MEL-U8-hxn" id="IUB-mt-ikQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="x0A-6f-2Nl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-U8-hxn">
+                    <rect key="frame" x="10" y="47" width="394" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="RE9-Jx-If8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RW-Ft-pKe">
+                    <rect key="frame" x="10" y="355" width="394" height="25.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JdD-5y-j91">
+                    <rect key="frame" x="10" y="385.5" width="394" height="358.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-A3-wee">
+                    <rect key="frame" x="8" y="764" width="398" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="add to cart">
+                        <color key="titleColor" systemColor="systemBackgroundColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoJ-5n-4Vf">
+                    <rect key="frame" x="8" y="814" width="398" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6kc-46-2QE"/>
+                    </constraints>
+                    <state key="normal" title="add to list">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Gyb-A3-wee" firstAttribute="height" secondItem="BoJ-5n-4Vf" secondAttribute="height" id="4hU-NQ-hGD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BoJ-5n-4Vf" secondAttribute="trailing" constant="8" id="4xr-3P-DHc"/>
+                <constraint firstItem="JdD-5y-j91" firstAttribute="trailing" secondItem="9RW-Ft-pKe" secondAttribute="trailing" id="5Gf-d2-7NM"/>
+                <constraint firstItem="BoJ-5n-4Vf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="7Dx-Qf-hml"/>
+                <constraint firstItem="JdD-5y-j91" firstAttribute="leading" secondItem="9RW-Ft-pKe" secondAttribute="leading" id="AOe-f1-5wg"/>
+                <constraint firstItem="BoJ-5n-4Vf" firstAttribute="top" secondItem="Gyb-A3-wee" secondAttribute="bottom" constant="10" id="GyP-1g-ugF"/>
+                <constraint firstItem="9RW-Ft-pKe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="INa-Of-YGf"/>
+                <constraint firstItem="9RW-Ft-pKe" firstAttribute="top" secondItem="MEL-U8-hxn" secondAttribute="bottom" constant="8" id="J4Y-x7-9ht"/>
+                <constraint firstItem="Gyb-A3-wee" firstAttribute="leading" secondItem="BoJ-5n-4Vf" secondAttribute="leading" id="TgL-aR-VKN"/>
+                <constraint firstItem="Gyb-A3-wee" firstAttribute="trailing" secondItem="BoJ-5n-4Vf" secondAttribute="trailing" id="Xiu-cO-HuU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9RW-Ft-pKe" secondAttribute="trailing" constant="10" id="fY2-ba-G0c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BoJ-5n-4Vf" secondAttribute="bottom" constant="8" id="i4U-BK-Okn"/>
+                <constraint firstItem="Gyb-A3-wee" firstAttribute="top" secondItem="JdD-5y-j91" secondAttribute="bottom" constant="20" id="kOv-Br-hRg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MEL-U8-hxn" secondAttribute="trailing" constant="10" id="oEB-rM-cCX"/>
+                <constraint firstItem="JdD-5y-j91" firstAttribute="top" secondItem="9RW-Ft-pKe" secondAttribute="bottom" constant="5" id="s4z-nc-6Gp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="MEL-U8-hxn" secondAttribute="top" constant="-3" id="shv-ec-fD1"/>
+                <constraint firstItem="MEL-U8-hxn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="sml-uF-wWg"/>
+            </constraints>
+            <point key="canvasLocation" x="102.89855072463769" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
